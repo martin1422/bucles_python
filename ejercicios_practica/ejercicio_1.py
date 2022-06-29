@@ -9,6 +9,7 @@
 
 # Ejercicios con bucles "while"
 
+
 x = 0
 # Dado el siguiente "while", complete la condicion
 # para que el "while" itere siempre que <x sea menor a 6>
