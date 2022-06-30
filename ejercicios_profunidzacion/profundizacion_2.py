@@ -35,3 +35,47 @@ alguno de lo soportados o no es la palabra "FIN".
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+opcion = ''
+numero_1 = 0
+numero_2 = 0
+
+while True:
+    print('\n\nCalculadora')
+    print('- Suma  (+)\n'
+          '- Resta (-)\n'
+          '- Multiplicación (*)\n'
+          '- División (/)\n'
+          '- Exponente/Potencia (**))\n'
+          '- para salir (FIN o fin) \n')
+
+    opcion = str(input('Ingrese la opcion: '))
+    if opcion == 'FIN' or opcion == 'fin':
+        break
+
+    if opcion == '+':
+        numero_1 = int(input('Ingrese primer numero: '))
+        numero_2 = int(input('Ingrese segundo numero: '))
+        resul = numero_1 + numero_2
+        print('La suma es = ', resul)
+    elif opcion == '-':
+        numero_1 = int(input('Ingrese primer numero: '))
+        numero_2 = int(input('Ingrese segundo numero: '))
+        resul = numero_1 - numero_2
+        print('La resta es = ', resul)    
+    elif opcion == '*':
+        numero_1 = int(input('Ingrese primer numero: '))
+        numero_2 = int(input('Ingrese segundo numero: '))
+        resul = numero_1 * numero_2
+        print('La multiplicacion es = ', resul)
+    elif opcion == '/':
+        numero_1 = int(input('Ingrese primer numero: '))
+        numero_2 = int(input('Ingrese segundo numero: '))
+        resul = numero_1 / numero_2
+        print('La division es = ', resul)
+    elif opcion == '**':
+        numero_1 = int(input('Ingrese primer numero: '))
+        numero_2 = int(input('Ingrese segundo numero: '))
+        resul = numero_1 ** numero_2
+        print('La potencia es = ', resul)
+    else:
+        print('¡Error de opcion!!!')    
